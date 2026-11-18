@@ -1,0 +1,77 @@
+:root {
+  --navy: #0b1a33;
+  --navy-2: #12264a;
+  --ink: #e9eef7;
+  --muted: #9fb0cc;
+  --accent: #38d6ff;
+  --red: #c8102e;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--navy);
+  color: var(--ink);
+  font-family: "Century Schoolbook", "Century Schoolbook L", Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+a { color: var(--accent); }
+header {
+  padding: 2.5rem 1.25rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+header img { width: min(360px, 80vw); height: auto; }
+.tagline {
+  font-family: Bahnschrift, "Segoe UI", "DIN Alternate", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-size: .85rem;
+  margin-top: .75rem;
+}
+nav { margin-top: 1rem; font-family: Bahnschrift, "Segoe UI", Arial, sans-serif; font-size: .9rem; }
+nav a { margin: 0 .6rem; text-decoration: none; }
+main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+h1, h2, h3 { font-weight: normal; line-height: 1.25; }
+h1 { font-size: 1.9rem; margin-top: 0; }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; color: #fff; }
+h3 { font-size: 1.1rem; margin-top: 1.6rem; }
+.lang-switch {
+  display: inline-block;
+  font-family: Bahnschrift, "Segoe UI", Arial, sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: .2rem .8rem;
+  text-decoration: none;
+}
+.stamp {
+  display: inline-block;
+  color: var(--red);
+  border: 2px solid var(--red);
+  padding: .1rem .6rem;
+  transform: rotate(-3deg);
+  font-family: Bahnschrift, "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: .2em;
+  font-size: .8rem;
+}
+.card {
+  background: var(--navy-2);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.25rem 0;
+}
+.updated { color: var(--muted); font-size: .9rem; }
+hr { border: 0; border-top: 1px solid rgba(255,255,255,.1); margin: 3rem 0; }
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: .85rem;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  font-family: Bahnschrift, "Segoe UI", Arial, sans-serif;
+}
